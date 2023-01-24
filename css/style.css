@@ -6,18 +6,6 @@
     box-sizing: border-box;
 }
 /* Regole di DEBUG */
-.debug .section-container {
-    height: 400px;
-}
-.debug .small-column {
-    background-color: pink;
-}
-.debug .big-column {
-    background-color: aqua;
-}
-.debug .full-column {
-    background-color: green;
-}
 .debug .footer-bottom > div {
     background-color: pink;
 }
@@ -113,7 +101,7 @@ header {
     margin: 0px 20px;
     padding: 16px 10px;
 }
-.arrow-down::before {
+.arrow-down-black::before {
     content: '\2193';
     padding: 5px;
     font-size: 24px;
@@ -137,20 +125,58 @@ main section {
 }
 .small-column {
     width: 40%;
+    padding: 40px;
 }
-.bg-gray {
-    background-color: grey;
+.small-column h1 {
+    font-size: 42px;
+    line-height: 50px;
+    margin-bottom: 20px;
+}
+.small-column p {
+    font-size: 20px;
+    line-height: 30px;
+}
+.bg-color {
+    background-color: lightgrey;
 }
 .full-column {
     width: 100%;
+    text-align: center;
 }
-main section:last-child .section-container{
-    height: 400px;
+.full-column h1{
+    color: black;
+    font-size: 44px;
+    padding: 10px 0;
+}
+.full-column p{
+    font-size: 20px;
+    padding: 20px 100px;
+    line-height: 30px;
+}
+.full-column .sfondo {
+    padding: 20px 0;
+    font-size: 24px;
+    background-image: url(../img/stars.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.full-column button {
+    color: white;
+    background-color:cornflowerblue;
+    margin: 20px  0px;
+    font-size: 24px;
+}
+.arrow-down-white::before {
+    content: '\2193';
+    color: white;
+    padding: 5px;
+    font-size: 24px;
 }
 
 /* FOOTER */
 footer{
-    background-color: #333;
+    background-color: rgb(35, 39, 42);
     padding: 50px 0;
 }
 .container {
