@@ -1,0 +1,202 @@
+/* Style */
+/* CSS reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Regole CSS */
+body {
+    font-family: sans-serif;
+}
+li > a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+button {
+    border-radius: 30px;
+    padding: 10px;
+    border: none;
+}
+header {
+    background-color: rgb(37, 94, 233);
+}
+.topbar {
+    height: 100px;
+    display: flex;
+    max-width: 1170px;
+    margin: auto;
+    padding: 20px 0;
+}
+.logo-column {
+    width: 20%;
+    padding: 20px 0;
+}
+.menu-column {
+    width: 60%;
+    padding: 20px 0;
+}
+.topbar ul {
+    list-style: none;
+    text-align: center;
+}
+.topbar li {
+    padding: 0 15px;
+    display: inline-block;
+}
+.menu-column li:hover {
+    text-decoration: underline;
+}
+.login-column {
+    width: 20%;
+    text-align: right;
+    padding: 20px 0;
+}
+.login-column button {
+    background-color: white;
+}
+.login-column .shadow:hover {
+    color: blueviolet;
+    box-shadow: 0px 0px 10px 0px blueviolet;
+    cursor: pointer;
+}
+#jumbotron {
+    background-image: url(../img/jumbo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: 650px;
+    padding: 50px 0;
+}
+#jumbotron .content {
+    height: 100%;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    padding: 100px 0;
+}
+#jumbotron h1{
+    color: white;
+    font-size: 44px;
+    margin: 40px 0;
+}
+#jumbotron p{
+    color: white;
+    font-size: 20px;
+    line-height: 34px;
+    margin-bottom: 30px;
+}
+#jumbotron button {
+    font-size: 24px;
+    margin: 0px 20px;
+    padding: 16px 10px;
+}
+#jumbotron .shadow:hover {
+    color: blueviolet;
+    box-shadow: 0px 0px 10px 0px blueviolet;
+    cursor: pointer;
+}
+.arrow-down-black::before {
+    content: '\2193';
+    padding: 5px;
+    font-size: 24px;
+}
+button.black {
+    background-color: rgb(35, 39, 42);
+    color: white;
+}
+#jumbotron .black:hover {
+    background-color: #333;
+    box-shadow: 0px 0px 10px 0px #333;
+    cursor: pointer;
+}
+
+/* MAIN */
+main {
+    height: 1000px;
+}
+
+/* FOOTER */
+footer{
+    background-color: rgb(35, 39, 42);
+    padding: 50px 0;
+}
+.container {
+    max-width: 1170px;
+    margin: auto;
+}
+.footer-top {
+    display: flex;
+    color: white;
+}
+.footer-top .main-column-footer {
+    width: 30%;
+}
+.footer-top .menu-column-footer {
+    width: 70%;
+    display: flex;
+}
+.menu-column-footer > div{
+    width: calc(100% / 4);
+}
+.main-column-footer h1 {
+    font-size: 36px;
+    color: rgb(37, 94, 233);
+    margin-bottom: 20px;
+}
+.main-column-footer img {
+    height: 20px;
+    line-height: 20px;
+    vertical-align: middle;
+}
+.main-column-footer a{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    line-height: 20px;
+    vertical-align: middle;
+}
+.main-column-footer .half-arrow::after{
+    content:'\276F';   
+    line-height: 20px;
+    vertical-align: middle;
+}
+.loghi {
+    padding: 20px 20px 0 0;
+}
+.main-column-footer .social {
+    font-size: 20px;
+}
+.col ul {
+    list-style: none;
+    font-size: 20px;
+    line-height: 40px;
+}
+.col li:first-child {
+    color: rgb(37, 94, 233);
+    font-weight: bold;
+}
+.col li:hover{
+    text-decoration: underline;
+}
+footer hr {
+    margin: 20px 0;
+    border: 1px solid cornflowerblue;
+}
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+.footer-register button{
+    background-color: cornflowerblue;
+    color: white;
+    font-size: 20px;
+}
+.footer-register .shadow:hover {
+    background-color: rgb(125, 164, 236);
+    box-shadow: 0px 0px 10px 0px #333;
+    cursor: pointer;
+}
