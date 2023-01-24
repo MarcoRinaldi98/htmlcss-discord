@@ -191,14 +191,23 @@ footer{
     line-height: 20px;
     vertical-align: middle;
 }
-.main-column-footer span::after{
+.main-column-footer a{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    line-height: 20px;
+    vertical-align: middle;
+}
+.main-column-footer .half-arrow::after{
     content:'\276F';   
     line-height: 20px;
     vertical-align: middle;
 }
-.main-column-footer .loghi {
-    font-size: 24px;
+.loghi {
     padding: 20px 20px 0 0;
+}
+.main-column-footer .social {
+    font-size: 20px;
 }
 .col ul {
     list-style: none;
