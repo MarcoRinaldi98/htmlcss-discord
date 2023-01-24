@@ -5,22 +5,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-/* Regole di DEBUG */
-.debug .footer-bottom > div {
-    background-color: pink;
-}
-.debug .footer-bottom {
-    background-color: aquamarine;
-}
-.debug .footer-top {
-    height: 400px;
-}
-.debug .main-column-footer {
-    background-color: palevioletred;
-}
-.debug .menu-column-footer {
-    background-color: aqua;
-}
 
 /* Regole CSS */
 body {
@@ -137,7 +121,7 @@ main section {
     line-height: 30px;
 }
 .bg-color {
-    background-color: lightgrey;
+    background-color: rgb(240, 240, 240);
 }
 .full-column {
     width: 100%;
@@ -185,6 +169,7 @@ footer{
 }
 .footer-top {
     display: flex;
+    color: white;
 }
 .footer-top .main-column-footer {
     width: 30%;
@@ -196,11 +181,45 @@ footer{
 .menu-column-footer > div{
     width: calc(100% / 4);
 }
+.main-column-footer h1 {
+    font-size: 36px;
+    color: rgb(37, 94, 233);
+    margin-bottom: 20px;
+}
+.main-column-footer img {
+    height: 20px;
+    line-height: 20px;
+    vertical-align: middle;
+}
+.main-column-footer span::after{
+    content:'\276F';   
+    line-height: 20px;
+    vertical-align: middle;
+}
+.main-column-footer .loghi {
+    font-size: 24px;
+    padding: 20px 20px 0 0;
+}
+.col ul {
+    list-style: none;
+    font-size: 20px;
+    line-height: 40px;
+}
+.col li:first-child {
+    color: rgb(37, 94, 233);
+    font-weight: bold;
+}
 footer hr {
     margin: 20px 0;
+    border: 1px solid cornflowerblue;
 }
 .footer-bottom {
     display: flex;
     justify-content: space-between;
     padding: 20px 0;
+}
+.footer-register button{
+    background-color: cornflowerblue;
+    color: white;
+    font-size: 20px;
 }
