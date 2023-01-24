@@ -6,21 +6,6 @@
     box-sizing: border-box;
 }
 /* Regole di DEBUG */
-.debug .logo-column{
-    background-color: orange;
-}
-.debug .menu-column{
-    background-color: orange;
-}
-.debug .login-column{
-    background-color: orange;
-}
-.debug .col{
-    border:1px dashed black;
-}
-.debug #jumbotron .content{
-    background-color: pink;
-}
 .debug .section-container {
     height: 400px;
 }
@@ -50,8 +35,21 @@
 }
 
 /* Regole CSS */
+body {
+    font-family: sans-serif;
+}
+li > a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+button {
+    border-radius: 30px;
+    padding: 10px;
+    border: none;
+}
 header {
-    background-color: aqua;
+    background-color: rgb(37, 94, 233);
 }
 .topbar {
     height: 100px;
@@ -81,15 +79,48 @@ header {
     text-align: right;
     padding: 20px 0;
 }
+.login-column button {
+    background-color: white;
+}
 #jumbotron {
-    background-color: blue;
-    height: 500px;
+    background-image: url(../img/jumbo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: 650px;
     padding: 50px 0;
 }
 #jumbotron .content {
     height: 100%;
     width: 50%;
     margin: auto;
+    text-align: center;
+    padding: 100px 0;
+}
+#jumbotron h1{
+    color: white;
+    font-size: 44px;
+    margin: 40px 0;
+}
+#jumbotron p{
+    color: white;
+    font-size: 20px;
+    line-height: 34px;
+    margin-bottom: 30px;
+}
+#jumbotron button {
+    font-size: 24px;
+    margin: 0px 20px;
+    padding: 16px 10px;
+}
+.arrow-down::before {
+    content: '\2193';
+    padding: 5px;
+    font-size: 24px;
+}
+button.black {
+    background-color: rgb(35, 39, 42);
+    color: white;
 }
 
 /* MAIN */
